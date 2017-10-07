@@ -1,0 +1,87 @@
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero-thumb.jpg) no-repeat 100%/cover;
+  min-height: 300px;
+
+  @media (min-width: 800px) {
+    min-height: 500px;
+  }
+}
+
+header {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:$unit 0;
+
+  .logo {
+    a {
+      color: $main-color;
+    }
+  }
+
+}
+
+nav {
+  display: none;
+  ul {
+    margin-right: -$unit-large;
+  }
+
+  @media(min-width: 700px){
+    display: block;
+  }
+}
+
+.nav-item {
+  margin-right: $unit-large;
+  display: inline-block;
+
+  a {
+    color: $main-color;
+    padding: $unit 0;
+    text-transform: capitalize;
+    border-bottom:1px solid transparent;
+    &:hover{
+      border-color: $secondary-color;
+  }
+  }
+}
+
+.hero__content{
+  text-align: center;
+  margin-top: $unit-huge;
+}
+
+.hero__title{
+  color:$main-color;
+  font-size: 2.5em;
+  margin-bottom: $unit-large;
+  text-transform: capitalize;
+}
+
+.hero__desc{
+  color: $main-color;
+  margin-bottom: $unit-large;
+  font-size: 1.5em
+}
+
+.hero__cta{
+  padding-bottom: $unit-huge;
+  @media(min-width: 800px){
+    padding-bottom: 0;
+  }
+}
+.cta{
+  color:$main-color;
+  padding:$unit-small $unit;
+  border:1px solid;
+  border-radius: $border-radius;
+
+}
+
+.cta--main{
+  background: $secondary-color;
+  border-color: $secondary-color;
+  margin-right: $unit;
+}
